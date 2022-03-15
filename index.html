@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La biére - Entrega final</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- JQUERY -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1>LA BIERE</h1>
+    </header>
+    <div class="div-comenzar">
+        <button id="boton-comenzar" type="button" class="btn btn-primary btn-lg btn-block btnComenzar">COMENZAR</button>
+    </div>
+    <main>
+        
+    <section id="sectionLitros" style="display: none;">
+        <h2>Armá tu presupuesto</h2>
+        <div>
+            <p>Seleccioná la cantidad de litros de cerveza para tu evento (Se calcula 1 litro por persona)</p>
+        </div>
+        <div id="divSelectLitros">
+            <select id="selectLitros">
+            </select>
+            <div id="msjCantidadDeSabores" style="display: none;"></div>
+        </div>
+    </section>
+    <section id="sectionEstilos" style="display: none;">
+        <h3>Elegí tu cerveza preferida</h3>
+        <div id="divEstilos" class="card-columns"></div>
+    </section>
+    
+    <section id="sectionAdicionales" style="display: none;">
+        <h3>Servicios Adicionales</h3>
+        <div id="divAdicionales" class="card-columns"></div>
+    </section>
+    <section id="sectionMostrarEleccion" style="display: none;">
+        <h3>Tus cervezas:</h3>
+        <div id="divEstilosElegidos"></div>
+        <h3>Tus servicios:</h3>
+        <div id="divAdicionalesElegidos"></div>
+    </section>
+    <div id="divMostrarPrecio" style="display: none;">
+        <h3>Subtotal</h3>
+        <div id='divPrecioSubtotal'></div>
+        <div id="divPrecioTotal">
+            <h3>Total</h3>
+        </div>
+        <div>
+            <button id="botonLimpiarElegidos">
+                Limpiar lista
+            </button>
+            <button id="botonGuardarCarrito">
+                Guardar Carrito
+            </button>
+            <button id="botonConfirmarCompra">
+                Confirmar compra
+            </button>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <p class="footer-p">Lucio Luczka - 2022</p>
+    </footer>
+    <script src="./js/clases.js"></script>
+    <script src="./js/globales.js"></script>
+    <script src="./js/funciones.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
